@@ -1,3 +1,25 @@
-h1{
-  color: white;
-}
+/*!
+Theme Name: mytheme
+Theme URI:
+Description: 架空の怪しい会社
+Version: 1.0
+Author: Fumiya
+Author URI:
+*/
+
+@charset "UTF-8";
+@import 'foundation/reset';
+@import 'foundation/base';
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/sidebar';
+@import 'layout/navigation';
+@import 'layout/parallax';
+@import 'layout/footer';
+@import 'object/about-contents';
+@import 'object/card';
+@import 'object/form';
+@import 'object/grid';
+@import 'object/button';
+@import 'object/posts';
+@import 'object/variables';

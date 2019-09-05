@@ -1,0 +1,20 @@
+.parallax {
+    min-height: 150vh;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.content {
+    padding: 30px;
+}
+.parallax.bg-01 {
+    background-image: url(../../images/main1.jpg);
+}
+.parallax.bg-02 {
+    background-image: url(../../images/main2.jpg);
+}
+
+.parallax.bg-03 {
+    background-image: url(../../images/main3.jpg);
+}

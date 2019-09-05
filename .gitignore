@@ -1,1 +1,9 @@
 node_modules
+wp-includes/
+wp-admin/
+wp-content/languages/
+wp-content/plugins/
+wp-content/uploads/
+wp-content/themes/twentysixteen
+wp-content/themes/twentyseventeen
+wp-content/themes/twentynineteen

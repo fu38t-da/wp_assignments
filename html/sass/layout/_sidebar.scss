@@ -1,0 +1,19 @@
+#side-bar{
+  position: relative;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 150px;
+
+  .widget {
+    margin-bottom: 25px;
+    h3 {
+      font-weight: bold;
+      padding-bottom: 7px;
+    }
+
+    li {
+      line-height: 1.8;
+    }
+  }
+}

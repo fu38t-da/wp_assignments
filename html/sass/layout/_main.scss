@@ -1,0 +1,75 @@
+// メインタイトル
+.maintitle {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(#fff, .9);
+  text-align: center;
+  line-height: 100vh;
+}
+
+// ブログタイトル
+.blogtitle {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(#fff, .9);
+  text-align: center;
+  line-height: 100vh;
+}
+
+// 投稿タイトル
+.posttitle {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(#fff, .9);
+  text-align: center;
+  line-height: 50vh;
+}
+
+// 記事一覧画像
+.mainbg {
+  height: 100vh;
+  background-image: url(../images/main1.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+// 投稿画像
+.mainpost {
+  height: 50vh;
+  background-image: url(../images/main1.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@media screen and (min-width:376px){
+  .mainpost{
+    height: 100vh;
+  }
+  .maintitle {
+    font-size: 45px;
+    font-weight: bold;
+    color: rgba(#fff, .9);
+    text-align: center;
+    line-height: 100vh;
+  }
+
+  .blogtitle {
+    font-size: 45px;
+    font-weight: bold;
+    color: rgba(#fff, .9);
+    text-align: center;
+    line-height: 100vh;
+  }
+
+  .posttitle {
+    font-size: 45px;
+    font-weight: bold;
+    color: rgba(#fff, .9);
+    text-align: center;
+    line-height: 50vh;
+  }
+}
