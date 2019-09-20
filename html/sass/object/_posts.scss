@@ -1,3 +1,5 @@
+// 更新あり postimageサイズ　タイトルのCSS
+
 .post-container {
   margin: 50px auto;
   background-color: #fff;
@@ -14,12 +16,13 @@
       margin-bottom: 15px;
 
       h2{
-        font-size: 14px;
+        font-size: 18px;
         font-weight: bold;
+        color: #333;
       }
 
       .post-meta{
-        font-size: 10px;
+        font-size: 12px;
         padding: 7px 0 30px;
         color: #555;
         border-bottom: 1px solid #333;
@@ -34,12 +37,21 @@
         top: 0;
         left: 0;
         padding-top: 30px;
+
+        img{
+          width: 200px;
+          height: 200px;
+        }
       }
 
       .post-body {
         font-size: 10px;
-        width: 250px;
+        width: 80%;
         margin-top: 30px;
+
+       p{
+         font-size: 16px;
+       }
       }
     }
   }
@@ -57,4 +69,15 @@
   .next {
     text-align: right;
   }
+}
+
+// postの部分追加
+.content-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 50px 0;
+  padding: 30px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
 }

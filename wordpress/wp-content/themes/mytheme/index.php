@@ -36,12 +36,23 @@
     <div class="parallax bg-02" id="parallax-02">
       <h2 class="maintitle">The world is interesting</h2>
     </div>
+
+    <?php  $args = [
+    'orderby' => 'date', //並べ替えの方法
+    'cat'=>'category', //カテゴリーを出力
+    'order' => 'DESC', //降順(昇順 ASC)
+    'post_status' => 'publish', //記事の公開ステータス
+    'post_type' => 'post', //記事のタイプ
+    'posts_per_page' => 3, //出力する数。全出力したい場合は-1
+    ];;?>
     <div class="content">
+      <h2 class="content-title">BLOG</h2>
       <!-- main -->
-      <?php if (have_posts()) :?>
-      <?php
-          while (have_posts()) :
-          the_post();?>
+      <?php //クエリをセット
+      $the_query = new WP_Query($args);?>
+      <?php if ($the_query->have_posts()):
+          while ($the_query->have_posts()):
+              $the_query->the_post();?>
       <div id="main" class="post-container">
         <div id="posts">
           <!-- 記事一覧 -->
@@ -54,7 +65,7 @@
               <div class="post-content">
                 <div class="post-image">
                   <?php if (has_post_thumbnail()): ?>
-                    <?php the_post_thumbnail('thumbnail'); ?>
+                  <img src="<?php the_post_thumbnail('thumbnail'); ?>">
                   <?php else: ?>
                     <img src="https://placehold.jp/300x300.png" alt="" height="300" width="300">
                   <?php endif; ?>
@@ -72,8 +83,12 @@
       </div>
       <?php endwhile;?>
       <?php else:?>
-      <p>まだ記事はありません。</p>
-      <?php endif;?>
+        <p>まだ記事はありません。</p>
+      <?php
+      endif;
+      wp_reset_postdata();//ループをリセット
+      ?>
+    </div>
     <!--/ postsここまで -->
 
     <!-- form -->
@@ -81,6 +96,7 @@
       <h2 class="maintitle">Sometimes you need a break</h2>
     </div>
     <div class="formwrapper" id="form">
+      <h2 class="form-title">CONTACT</h2>
       <div class="inputWithIcon inputIconBg">
         <input type="text" placeholder="Your name">
         <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
